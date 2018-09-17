@@ -7,7 +7,7 @@
     "node": ">=8.0"
   },
   "scripts": {
-    "test": "mocha test/test",
+    "test": "mocha test/test"
   },
   "author": "",
   "license": "ISC",
