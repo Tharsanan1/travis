@@ -7,7 +7,8 @@
     "node": ">=8.0"
   },
   "scripts": {
-    "test": "mocha test/test"
+    "test": "mocha test/test && npm start",
+    "start" : "node index.js"
   },
   "author": "",
   "license": "ISC",
