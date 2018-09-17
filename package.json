@@ -7,8 +7,7 @@
     "node": ">=8.0"
   },
   "scripts": {
-    "test": "mocha test/test && npm start",
-    "start" : "docker build -t docker:ver1.0 ."
+    "test": "mocha test/test",
   },
   "author": "",
   "license": "ISC",
