@@ -8,11 +8,11 @@
   },
   "scripts": {
     "test": "mocha test/test"
-  
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "express": "^4.16.3",
     "mocha": "^5.2.0"
   }
