@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "mocha test/test && npm start",
-    "start" : "node index.js && docker build -t docker:ver1.0 ."
+    "start" : "docker build -t docker:ver1.0 ."
   },
   "author": "",
   "license": "ISC",
