@@ -27,5 +27,5 @@ expect "$ " {
 }
 
 expect "$ " {
-    timeout exit 1
+    timeout   exit 1
 }

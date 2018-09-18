@@ -4,9 +4,6 @@ const port = 8000
 
 app.get('/', (req, res) => {
     res.send('Hello Worldees!')
-    while(!server){
-        
-    }
     server.close();
 })
 
