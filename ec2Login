@@ -1,19 +1,31 @@
-#!/usr/bin/expect -f
+#!/usr/bin/expect 
 
 # set our args into variables
 set i 0; foreach n $argv {set "p[incr i]" $n}
 
-set timeout 60
+set timeout 10
 #npm login command, add whatever command-line args are necessary
-spawn npm login
+spawn ssh -i /home/tkur2121/Tharsanan/Projects/SyscoLABS/AWS/Aws-cloud-portal/id_rsa scas2119@34.203.193.144
 match_max 100000
 
-expect "Enter passphrase for key '/home/tkur2121/Tharsanan/Projects/SyscoLABS/AWS/Aws-cloud-portal/id_rsa': "    
-send "$p1\r"
+#expect "*?nter passphrase for key '/home/tkur2121/Tharsanan/Projects/SyscoLABS/AWS/Aws-cloud-portal/id_rsa':" { 
+expect ": " {
+send "$p1\r"}
 
 
+expect "$ " {
+    send "sudo killall node\r"
+}
+expect ": " {
+    send "saifshere1\r"
+}
+expect "$ " {
+    send "cd aws-web-portal/team2\r"
+}
+expect "$ " {
+    send "sudo npm start\r"
+}
 
-expect {
-   timeout      exit 1
-   eof
+expect "$ " {
+    timeout exit 1
 }
