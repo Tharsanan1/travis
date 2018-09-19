@@ -4,3 +4,11 @@ node_js:
 cache:
   directories:
     - "node_modules"
+notifications:
+  email:
+    - tharsanan.15@cse.mrt.ac.lk
+  on_success: always 
+  on_failure: always
+
+notifications:
+  slack: cs2015-uom-tv:pF6cNqerHzN9ern639CzifGT
