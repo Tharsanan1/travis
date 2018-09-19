@@ -5,6 +5,7 @@ const port = 8000
 app.get('/', (req, res) => {
     res.send('Hello Worldees!')
     server.close();
+    console.log("hi");
     // close the server after a test browse.
 })
 
